@@ -1,0 +1,393 @@
+#product {
+    width: 100%;
+    padding: 70px 0 70px 0;
+}
+:root{
+    --bgColor:white;
+}
+
+#product h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 10px 0 20px 0px ;
+  }
+  
+#product p{
+    opacity: 0.8;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .tab-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tab-button {
+    position: relative;
+    background-color: rgb(228, 228, 228);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #092b5e;
+    color: #fff;
+}
+
+.tab-button:hover {
+    background-color: #1e509b;
+    color: #fff;
+}
+
+.tab-button.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #092b5e;
+}
+
+#paket-1p {
+    display: flex;
+}
+
+.package {
+    display: none; /* Awalnya sembunyikan semua package */
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start; 
+    margin: 50px 0;
+    gap: 20px; 
+}
+
+.product-card {
+    background-color: #fff;
+    width: 380px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    text-align: start;
+    align-items: stretch; 
+    margin-bottom: 20px; 
+    height: 690px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.badge {
+    background: linear-gradient(to bottom, #000080, #00008B);
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.bandwidth {
+    background: linear-gradient(to bottom, #ff0025ff, rgb(245, 50, 79));
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.large-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.small-text {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.product-title {
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.additional-info {
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: start;
+    margin: 0;
+}
+
+.benefits {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Menambahkan margin-top */
+}
+
+.lists {
+    margin-bottom: 2.5rem;
+    flex: 1 1 0%;
+    font-weight: lighter;
+    font-size: 14px; /* Mengubah ketebalan teks menjadi lighter */
+  }
+  
+  .lists .list {
+    margin-bottom: 0.6rem;
+    display: flex;
+    margin-left: 0.5rem
+  }
+  
+  .lists .list svg {
+    height: 1.4rem;
+    width: 1.4rem;
+    flex-shrink: 0;
+    margin-right: 30px;
+    color: #ff0025ff;
+  }
+
+  .included-package {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.included-images {
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.image {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Menggunakan "contain" untuk menjaga proporsi gambar */
+}
+
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #031838;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Mengatur elemen ke tengah secara horizontal */
+}
+
+  .subscribe {
+    width: 100%;
+  }
+  
+  .history {
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: #ff0025ff;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    letter-spacing: 0.05em;
+    color: #fff;
+  }
+
+  .track {
+    margin-top: 15px;
+    display: inline; /* Menghapus properti display: inline-block */
+    border: none;
+    font-weight: bolder;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    letter-spacing: 0.05em;
+    color: #ff0025ff; /* Mengganti warna teks menjadi merah seperti tombol */
+}
+
+  .history:hover {
+    background-color: rgb(245, 50, 79);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Ganti nilai z-index sesuai kebutuhan, pastikan lebih tinggi dari elemen lainnya */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Gaya untuk popup card */
+  .popup-card {
+    background-color: #fff;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    text-align: start;
+    overflow-y: auto; 
+    max-height: 90vh;
+    z-index: 3;
+    display: none;
+  }
+
+  .popup-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Menambahkan margin-top */
+  }
+
+  .terms-conditions {
+    list-style-type: decimal; /* Mengatur list-style-type menjadi nomor */
+    padding-left: 20px; 
+    font-weight: lighter;
+    font-size: 14px; 
+  }
+
+  .more-terms-conditions {
+    font-weight: lighter;
+    font-size: 14px; 
+    padding-left: 25px; 
+  }
+
+  .more-terms-conditions-2 {
+    font-weight: bold;
+    font-size: 14px; 
+    padding-left: 25px; 
+  }
+
+  /* Gaya untuk daftar "Syarat dan Ketentuan" dengan class "scrollable" */
+    .scrollable {
+    max-height: 400px; /* Mengatur tinggi maksimum untuk daftar agar dapat discroll */
+    overflow-y: auto; /* Membuat daftar dapat discroll jika kontennya lebih panjang dari area yang ditentukan */
+  }
+  
+  /* Gaya untuk indicator scroll */
+  .scrollable::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Gaya untuk tombol "Tutup" di dalam pop-up card */
+  .close {
+    background-color: #ff0025ff;
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+
+  }
+
+  .close:hover {
+    background-color: rgb(245, 50, 79);
+  }
+  
+  /* Gaya tambahan sesuai dengan kebutuhan Anda */
+  
+
+/* Untuk lebar layar di bawah 1000px */
+@media (max-width: 1000px) {
+    .product-card {
+        width: 100%;
+        height: fit-content; /* Mengatur width menjadi 100% untuk responsif */
+        margin-right: 20%;
+        margin-left: 20%; /* Mengatur width menjadi 100% untuk responsif */
+    }
+    
+    .badge {
+        display: none; /* Sembunyikan badge pada layar kecil */
+    }
+
+    .benefits {
+        font-size: 14px; /* Mengatur ukuran font menjadi 14px pada layar kecil */
+    }   
+
+    .popup-card {
+        width: 90%; /* Sesuaikan lebar untuk perangkat berukuran kecil */
+      }
+}
+
+/* Untuk lebar layar di bawah 750px (mode smartphone) */
+@media (max-width: 750px) {
+    .product-card {
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: fit-content; /* Mengatur width menjadi 100% untuk responsif */
+    }
+
+    .bandwidth {
+        margin-right: 0; /* Menghapus margin kanan pada layar kecil */
+        margin-bottom: 15px; /* Menambahkan margin-bottom pada layar kecil */
+    }
+
+    .product-title {
+        justify-items: center;   
+        flex-direction: column; /* Mengubah tata letak menjadi satu kolom pada mode smartphone */
+    }
+
+    .product-name {
+        margin-top: 15px; /* Menambahkan margin-top antara "product name" dengan "box bandwidth" */
+    }
+
+    .benefits {
+        margin: 5px 0; /* Mengatur margin pada layar kecil */
+    }
+
+    .benefits-product i {
+        font-size: 12px; /* Mengubah ukuran ikon menjadi 12px pada layar kecil */
+        margin-right: 10px; /* Mengubah margin kanan ikon pada layar kecil */
+    }
+
+    .popup-card {
+        width: 95%; /* Sesuaikan lebar untuk perangkat lebih kecil */
+        max-width: 90%; /* Maksimumkan lebar */
+        padding: 10px; /* Sesuaikan padding */
+      }
+}
+

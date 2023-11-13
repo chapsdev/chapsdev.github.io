@@ -1,0 +1,65 @@
+#home{
+    height: 100vh;
+    width: 100%;
+}
+#home .home-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+#home .home-content-left h2{
+   font-size: 4rem;
+}
+
+.red{
+    color: #ff0025;
+}
+.green{
+    color: #0F9D58;
+}
+.blue{
+    color: #4285F4;
+}
+.yellow{
+    color: #F8A218;
+}
+#home .home-content-left p{
+    font-weight: 300;
+    max-width: 650px;
+    line-height: 25px;
+    padding: 0 0 0 10px;
+}
+#home .home-content-left h4{
+    opacity: 0.8;
+    font-weight: 600;
+    margin-top: 20px; /* Jarak margin atas, ganti nilainya sesuai kebutuhan Anda */
+    margin-bottom: 20px; /* Jarak margin bawah, ganti nilainya sesuai kebutuhan Anda */
+    line-height: 1.7; 
+    padding: 0 0 0 10px;
+}
+#home button{
+    margin: 30px 0 0 10px;
+    padding: 15px 20px;
+    border: solid #092b5e;
+    background-color: #092b5e;
+    border-radius: 5px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+}
+#home button:hover{
+    border: solid #1e509b;
+    background-color: #1e509b;
+
+}
+#home .home-content-right img{
+    width: 550px;
+    animation: bounce 3s infinite;
+}

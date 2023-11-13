@@ -1,0 +1,396 @@
+@media screen and (max-width: 900px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+    #navbar{
+        display: none;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        background-color: white;
+        position: fixed;
+        padding: 20px;
+        z-index: 100;
+    }
+
+    #navbar .nav-logo{
+        display: none;
+
+    }
+    .hidden{
+        display: block !important;
+        font-size: 1.5rem;
+        position: fixed;
+        top: 8px;
+        left: 20px;
+        z-index: 100;
+    }
+    .hidden img{
+        width: 80px;
+    }
+    .hidden a{
+        text-decoration: none;
+        color: black;
+    }
+    .hamburger{
+        display: block;
+        width: 40px;
+        position: fixed;
+        top: 7px !important;
+        right: 20px;
+        z-index: 100;
+        transition: all 0.3s ease-in-out;
+    }
+    #navbar .nav-logo img{
+        margin-bottom: 5px;
+        width: 80px;
+    }
+    #navbar .develop{
+        position: absolute;
+        bottom: 120px;
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    #navbar .nav-left,#navbar .nav-left-links ul{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #navbar .nav-right, #navbar .nav-right-links ul{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #navbar .nav-left .nav-left-links ul li{
+        padding-left:0px;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    #navbar .nav-right .nav-right-links ul li{
+        padding-right:0px;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    #navbar .nav-right{
+        padding-bottom: 200px;
+    }
+
+    #home{
+       padding: 0px 0px;
+    }
+    
+    #home .home-content{
+       flex-direction: column-reverse;
+       justify-content: center;
+    }
+    .gallery{
+        grid-template-rows: repeat(3, 10vw);
+    }
+    #about{
+        height: 100%;
+        padding: 0px 0 50px 0;
+    }
+    #about .about-content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #about .about-content-right .about{
+        padding: 0 0 0 0;
+    }
+    #about .about-content-right h4{
+        padding: 0 0 0 0px;
+    }
+    #about .about-content-right p{
+        padding: 0 0 0 0px;
+    }
+    #about button{
+        margin: 30px 0 0 0px;
+    }
+    #about .about-content-left{
+        width: 100%;
+    }
+    #about .about-content-right{
+        width: 100%;
+        align-items: center;
+        padding: 0 0 50px 0;
+    }
+    .circle1,.circle2,.circle3,.circle4{
+        display: none;
+    }
+    #about p{
+        text-align: center;
+    }
+    #events ul li .date::after {
+        width: 1.3rem;
+    }
+    #team{
+        padding: 1rem 3rem ;
+    }
+    .first{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .dsc:first-of-type{
+        top: 0px !important;
+    }
+    .dsc:last-of-type{
+        bottom: 160px !important;
+    }
+
+    #social-media h3 {
+        width: 70%;
+        line-height: 50px;
+      }
+
+}
+@media screen and (max-width: 600px) {
+    #home .home-content{
+        text-align: center;
+        line-height: 40px;
+        padding: 0 30px;
+    }
+    #home .home-content-left h2{
+        font-size: 2rem;
+    }
+
+    #product h3 {
+        font-size: 2rem;
+    }
+
+    #contact h3 {
+        font-size: 2rem;
+    }
+
+    #paket-promo h3 {
+        font-size: 2rem;
+    }
+
+    #home .home-content-left h4{
+        font-size: 1rem;
+    }
+    #home .home-content-left p{
+        padding: 0 0 0 0;
+        line-height: 20px;
+    }
+    #home .home-content-right img{
+        width: 100%;
+    }
+    #about .about-content{
+        padding: 0 30px;
+        margin-top: 50px;
+    }
+    #about .about-content-right .about{
+        padding: 0 0 0 0;
+    }
+    #about .about-content-right h4{
+        font-size: 1.9rem;
+        line-height: 40px;
+        padding: 10px 0;
+    }
+    #about .about-content-right p{
+        padding: 0 0 0 0;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    #about .about-content-left {
+        width: 100%;
+    }
+    #events h4{
+        font-size: 1.9rem;
+    }
+    #teams{
+        padding: 1rem 3rem ;
+    }
+    #teams .first{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #teams h4{
+        font-size: 1.9rem;
+    }
+    .container{
+        width: 100%;
+    }
+    .first{
+        display: grid;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .dsc:first-of-type{
+        top: 50px;
+        width: 50px;
+        left: 30px;
+    }
+    .dsc:last-of-type{
+        bottom: 50px;
+        width: 50px;
+        right: 30px;
+    }
+    #teams .right{
+        z-index: 10;
+    }
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 768px) {
+    #social-media .call-center {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #product h3 {
+        font-size: 1.6rem;
+    }
+
+    #paket-promo h3 {
+        font-size: 1.6rem;
+        margin: 10px;
+    }
+
+    #contact h3{
+        font-size: 1.6rem;
+    }
+
+    #social-media h3 {
+        font-size: 1.6rem;
+        margin: 10px;
+    }
+
+    .wa-widget .wa-float-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .wa-widget .wa-float-btn svg {
+        width: 30px;
+        height: 30px;
+      }
+
+    .call-center-content {
+        width: 100%;
+    }
+
+    .call-center .line {
+        display: none;
+    }
+
+    .call-center-content .call-center-text .title {
+        font-size: 16px;
+        color: black;
+        opacity: 0.8;
+        font-weight: 500;
+    }
+    
+    .call-center .line {
+        display: none;
+    }
+    
+    .call-center-content .call-center-text .desc {
+        font-size: 20px;
+        color: black;
+        opacity: 0.8;
+        font-weight: bolder;
+    }
+    
+    .call-center-content .call-center-text .text {
+        font-size: 14px;
+        color: rgb(158, 157, 157);
+        font-weight: 400;
+    }
+    
+    .call-center-content img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .call-center-content .call-center-text .send-email-btn {
+        margin: 10px 0 0 0px;
+        padding: 10px 15px;
+        border: solid #ff0025ff;
+        background-color: #ff0025ff;
+        border-radius: 10px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .call-center-content .call-center-text .send-email-btn:hover {
+        border: solid rgb(245, 50, 79);
+        background-color: rgb(245, 50, 79);
+    }
+    
+    #social-media .social-media-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #social-media .social-media-content .social-media-title {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 900;
+    }
+    
+    #social-media .social-media-content .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #social-media .social-media-content .socials img {
+        width: 25px;
+        margin: 5px 10px 0 10px;
+        cursor: pointer;
+        animation: dance2 2s infinite;
+    }
+    
+    .dsc:first-of-type {
+        width: 80px;
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        animation: dance2 2s infinite;
+    }
+    
+    .dsc:last-of-type {
+        width: 80px;
+        position: absolute;
+        bottom: 150px;
+        right: 150px;
+        animation: dance2 2s infinite;
+    }
+    
+    #social-media .button {
+        margin: 30px 0 0 0px;
+        padding: 15px 20px;
+        border: solid #4688F1;
+        background-color: #4688F1;
+        border-radius: 5px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    #social-media .button:hover {
+        border: solid #4e92ff;
+        background-color: #4e92ff;
+    }
+    
+}

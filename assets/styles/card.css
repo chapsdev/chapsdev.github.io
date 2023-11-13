@@ -1,0 +1,155 @@
+.overlay-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Ganti nilai z-index sesuai kebutuhan, pastikan lebih tinggi dari elemen lainnya */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.popup {
+  background-color: #fff;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  text-align: start;
+  overflow-y: auto; 
+  max-height: 90vh;
+  z-index: 3;
+  display: none;
+}
+
+.modal-container-header {
+  position: sticky;
+  top: 0;
+  z-index: 4; /* Pastikan nilai z-index lebih tinggi dari elemen konten popup */
+  padding: 15px 25px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff; /* Tambahkan warna latar belakang putih */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.modal-container-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 1.125;
+}
+
+.popup img {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+}
+
+.popup p {
+  font-size: 12px;
+  font-weight: 200;
+  padding: 0px 15px;
+}
+
+.promo-terms-conditions {
+  padding: 0px 15px;
+  margin-top: 10px;
+}
+
+.promo-terms-conditions h5 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.promo-terms-conditions ul {
+  list-style-type: decimal; /* Mengatur list-style-type menjadi nomor */
+  font-weight: 200;
+  font-size: 12px; 
+}
+
+.close-btn {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.15s ease;
+}
+
+.close-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.close-btn:hover, .close-btn:focus {
+  background-color: #dfdad7;
+}
+
+.subscribe-btn {
+  display: block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #ff0025ff;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease; /* Tambahkan efek transisi untuk smooth hover */
+}
+
+.subscribe-btn:hover {
+  background-color: rgb(245, 50, 79); 
+}
+
+@media screen and (max-width: 600px) {
+  .popup {
+    width: 90%;
+  }
+
+  .modal-container-title {
+    font-size: 1rem;
+  }
+
+  .popup img {
+    padding: 10px;
+  }
+
+  .popup p {
+    font-size: 10px;
+  }
+
+  .promo-terms-conditions h5 {
+    font-size: 10px;
+  }
+
+  .promo-terms-conditions ul {
+    font-size: 10px;
+  }
+
+  .close-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .subscribe-btn {
+    padding: 8px 16px;
+    margin: 10px;
+    font-size: 14px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  }
+}

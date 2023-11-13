@@ -1,0 +1,166 @@
+#teams{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+#teams h4 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 10px 0 50px 0px ;
+  }
+#teams p{
+    opacity: 0.8;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+.first{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: transparent;
+    margin-left: 14rem;
+    margin-right: 14rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: grid;
+}
+.right{
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+}
+.right a{
+    z-index: 50;
+    color: #000;
+    margin-right: 0.7rem;
+}
+.right a:hover{
+    color:  #0072b1;
+}
+.outerbox{
+    height: 21rem;
+    width: 15rem;
+    background-color: transparent;
+    color: #000;
+    border-radius: 0.5rem;
+    display: grid;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.backcolor{
+    height: 15rem;
+    width: 15rem;
+    margin-top: 3rem;
+    background-color: #fbbc05;
+    border-radius: 0.2rem;
+}
+.backcolor2{
+    height: 15rem;
+    width: 15rem;
+    margin-top: 3rem;
+    background-color: #4285f4;
+    border-radius: 0.2rem;
+}
+.backcolor3{
+    height: 15rem;
+    width: 15rem;
+    margin-top: 3rem;
+    background-color: #ea4335;
+    border-radius: 0.2rem;
+}
+.backcolor4{
+    height: 15rem;
+    width: 15rem;
+    margin-top: 3rem;
+    background-color: #34a853;
+    border-radius: 0.2rem;
+}
+.photo{
+    height: 125%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3.75rem;
+}
+.outerbox span{
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+.outerbox p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top: -1.6rem;
+    margin-left: -4rem;
+}
+.shashank{
+    width: 240px;
+    height: 240px;
+    transform: translateY(60px);
+}
+.amitesh{
+    height:320px;
+    transform: translateX(50px) translateY(-13px);
+}
+.abhishek{
+    height: 280px;
+    transform: translateY(20px);
+}
+.unnati{
+    height: 280px;
+    transform: translateX(56px) translateY(35px);
+}
+.oshi{
+    height: 250px;
+    transform: translateY(50px);
+}
+.kushagra{
+    transform: translateY(-50px) translateX(-40px);
+    height: 350px !important;
+}
+.sawant{
+    height: 450px;
+    transform: translateY(-73px) translateX(20px);
+}
+.jhankar{
+    height: 650px;
+    transform: translateY(-219px) translateX(-50px);
+}
+.sid{
+    height: 500px;
+    transform: translateY(-181px) translateX(-120px);
+}
+.ishanp{
+    margin: -25.6px 0 0 0px !important;
+}
+.amiteshp{
+    margin-left: -10px !important;
+}
+.soumyap{
+    margin-left: -100px !important;
+}
+.jhankarp{
+    margin-left: -5px !important;
+}
+.kushp{
+    margin-left: -12px !important;
+}
+.shashankp{
+    margin-left: 5px !important;
+}
+.unnatip{
+    margin-left: 5px !important;
+}
+.arthp{
+    margin-left: 5px !important;
+}
+.sidp{
+    margin-left: -25px !important;
+}

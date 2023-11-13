@@ -1,0 +1,324 @@
+.wa-widget *{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .wa-widget .wa-float-btn {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    background: #ff0025ff;
+    box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.185);
+  }
+  
+  .wa-widget .wa-float-btn svg {
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+  }
+  
+  .wa-widget[data-position^="top-"] .wa-float-btn {
+    top: 20px;
+  }
+  
+  .wa-widget[data-position^="bottom-"] .wa-float-btn {
+    bottom: 20px;
+  }
+  
+  .wa-widget[data-position$="-left"] .wa-float-btn {
+    left: 20px;
+  }
+  
+  .wa-widget[data-position$="-right"] .wa-float-btn {
+    right: 20px;
+  }
+  
+  .wa-widget[data-position$="-center"] .wa-float-btn {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .wa-widget .wa-float-btn:hover {
+    background-color:  rgb(243, 73, 99);
+    animation: bounce_613 0.4s linear
+  }
+    
+    @keyframes bounce_613 {
+      40% {
+        transform: scale(1.4);
+      }
+    
+      60% {
+        transform: scale(0.8);
+      }
+    
+      80% {
+        transform: scale(1.2);
+      }
+    
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .floating-widget {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        z-index: 999;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show widget on larger screens */
+    .floating-widget.show-widget {
+        display: block;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+    
+    .widget-header {
+        position: sticky;
+        z-index: 4;
+        height: 70px;
+        justify-content: space-between;
+        padding: 5px 15px 5px 15px;
+        border-radius: 10px 10px 0px 0px;
+        background-color: #ff0025ff;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .header-content .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+    }
+    
+    .header-content .profile-info .name {
+        font-size: 14px;
+        color: white;
+        font-weight: 700;
+    }
+    
+    .header-content .profile-info .job {
+        font-size: 12px;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .header-content img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    .body-bubble {
+        padding: 20px 20px 20px 10px;
+        background: #efeae2;
+        position: relative;
+    }
+    
+    .body-bubble::before {
+        background: url(/assets/images/widget-wa/bg-chat.png);
+        overflow-y: auto;
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    
+    .bubble {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    
+    .bubble::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 100%; /* Mengubah left menjadi right */
+        margin-top: -8px; /* Half of the bubble height */
+        border-style: solid;
+        border-width: 8px 8px 8px 0; /* Mengubah urutan width agar muncul di kiri */
+        border-color: transparent #fff transparent transparent; /* Mengubah urutan warna */
+    }
+    
+    .bubble .name-bubble {
+        font-weight: bold;
+        font-size: 12px;
+        color: rgb(145, 145, 145);
+        margin-bottom: 5px;
+    }
+    
+    .bubble .message {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: black;
+    }
+    
+    .footer {
+        padding: 15px;
+        text-align: center;
+        background-color: #fff;
+    }
+    
+    .icon-button {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: #ff0025ff;
+        color: #ffffff;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    .icon-button svg {
+        fill: white;
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+    }
+    
+    .icon-button:hover {
+        background-color:  rgb(245, 50, 79);
+    }
+    
+    .close-widget {
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 0.15s ease;
+      }
+    
+      .close-widget svg {
+        color: white;
+        width: 24px;
+        height: 24px;
+      }
+      
+      .close-widget:hover, .close-widget:focus {
+        background-color: rgb(235, 121, 138);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive styles for smaller screens */
+
+
+    @media only screen and (max-width: 900px) {
+        .body-bubble {
+            padding: 15px;
+            text-align: start;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .body-bubble .message {
+            font-size: 14px;
+        }
+
+    }
+
+    @media only screen and (max-width: 650px) {
+        .floating-widget {
+            width: fit-content;
+            margin: 20px;
+        }
+        
+        .widget-header {
+            height: fit-content;
+            padding: 10px 10px;
+        }
+
+        .header-content img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .body-bubble {
+            padding: 15px;
+            text-align: start;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .body-bubble .message {
+            font-size: 12px;
+        }
+
+        .footer {
+            padding: 10px;
+        }
+
+        .icon-button {
+            font-size: 12px;
+        }
+
+        .icon-button svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
+
+        .close-widget {
+            width: 30px;
+            height: 30px;
+        }
+
+        .close-widget svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+        
+    
+    
+    

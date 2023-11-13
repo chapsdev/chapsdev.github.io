@@ -1,0 +1,221 @@
+#contact {
+    height: fit-content;
+    width: 100%;
+    line-height: 60px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: flex;
+    padding: 70px 0 70px 0;
+  }
+
+  :root{
+      --bgColor:white;
+  }
+
+#contact h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  padding: 10px 0 20px 0px ;
+}
+
+#contact .faq{
+  opacity: 0.8;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+#contact .contact-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+#contact .contact-content h4{
+    font-size: 3rem;
+    font-weight: 900;
+}
+#contact .contact-content .contact-title{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.container {
+    margin: 0 auto;
+    padding:2rem 4rem;
+    width: 48rem;
+  }
+  .accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #4688F1;
+  }
+  .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #031838;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .accordion button:hover,
+  .accordion button:focus {
+    cursor: pointer;
+    color: #4688F1;
+  }
+  .accordion button:hover::after,
+  .accordion button:focus::after {
+    cursor: pointer;
+    color: #4688F1;
+    border: 1px solid #4688F1;
+  }
+  .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 22px;
+  }
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  .accordion button[aria-expanded='true'] {
+    color: #4688F1;
+  }
+  .accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+  }
+  .accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: fit-content;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+
+  .accordion .accordion-content img {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+  
+  .accordion .accordion-content .accord-text {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: start;
+    margin: 20px 0;
+    line-height: 30px !important;
+  }
+
+  .accord-text-tautan {
+    font-weight: bold;
+    color: #ff0025ff;
+  }
+
+  
+  @media only screen and (max-width: 992px) {
+    /* Styles for screens up to 992px wide */
+  
+    #contact .container {
+      padding: 2rem; /* Adjusted padding for smaller screens */
+    }
+
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide */
+  
+    #contact {
+      margin-top: 20px; /* Further adjusted margin for better spacing */
+      margin-bottom: 20px; /* Further adjusted margin for better spacing */
+    }
+  
+    #contact .contact-content h4 {
+      font-size: 2rem;
+    }
+  
+    #contact .contact-content .container {
+      padding: 1rem; /* Adjusted padding for smaller screens */
+    }
+  
+    #contact .button {
+      margin: 15px 0; /* Adjust margin for smaller screens */
+    }
+
+    #contact .contact-content .socials {
+      flex-direction: row; /* Updated to align items horizontally */
+      justify-content: center; /* Center the items horizontally */
+    }
+  
+    #contact .contact-content .socials img {
+      margin: 0px 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Styles for screens up to 480px wide (Smartphones) */
+  
+    #contact {
+      margin-top: 10px; /* Further adjusted margin for better spacing on smartphones */
+      margin-bottom: 10px; /* Further adjusted margin for better spacing on smartphones */
+    }
+  
+    #contact .contact-content h4 {
+      font-size: 1.8rem; /* Adjusted font size for better readability on smartphones */
+    }
+  
+    #contact .container {
+      padding: 1rem; /* Adjusted padding for better spacing on smartphones */
+    }
+  
+    #contact .button {
+      margin: 10px 0; /* Adjusted margin for better spacing on smartphones */
+      padding: 10px 15px; /* Adjusted padding for better touch interaction on smartphones */
+      font-size: 1rem; /* Adjusted font size for better readability on smartphones */
+    }
+
+    #contact .contact-content .socials img {
+      margin: 10px; /* Adjusted margin between social icons on smartphones */
+    }
+  
+  }
